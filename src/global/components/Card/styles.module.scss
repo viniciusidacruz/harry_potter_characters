@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  div {
+    border: 2px solid var(--primary);
+    position: relative;
+    height: 227px;
+    width: 163px;
+    margin: 0 auto;
+  }
+
+  figcaption {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 1rem;
+  }
+}

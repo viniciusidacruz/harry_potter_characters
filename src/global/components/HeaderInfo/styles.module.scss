@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+
+  h2 {
+    font-size: 24px;
+    color: var(--primary);
+    margin-left: 0.62rem;
+    font-weight: 400;
+  }
+
+  span {
+    width: 700px;
+    height: 3px;
+    margin-left: auto;
+    background-color: var(--primary);
+  }
+
+  @media (max-width: 600px) {
+    justify-content: space-between;
+
+    span {
+      display: none;
+    }
+  }
+}

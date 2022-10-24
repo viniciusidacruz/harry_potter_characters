@@ -1,0 +1,61 @@
+
+:root {
+  // Fonts
+  --ff-default: 'Arial ', sans-serif;
+
+  // Colors
+  --primary: #A6955A;
+
+  --dark: #031C29;
+  --light: #D9D9D9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--primary);
+}
+
+body, input, select, textarea, button, label{
+  font-family: var(--ff-default);
+}
+
+p, span {
+  font-family: var(--ff-default-text);
+}
+
+button {
+  cursor: pointer;
+}
+
+[disabled] {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.buttonDefault {
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  background-color: var(--primary);
+  color: var(--dark);
+  transition: filter 0.2s;
+  outline: none;
+  border: none;
+  font-size: 1.12rem;
+  font-weight: 700;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
