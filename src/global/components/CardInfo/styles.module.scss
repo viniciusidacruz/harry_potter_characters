@@ -1,0 +1,51 @@
+.wrapper {
+  max-width: 704px;
+  width: 100%;
+  padding: 2.5rem;
+  background-color: #171717;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 38px;
+
+  & > div:first-child {
+    border: 2px solid var(--primary);
+    position: relative;
+    height: 356px;
+    width: 256px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.groupInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.lineInfo {
+  color: var(--primary);
+  margin-bottom: 1rem;
+
+  & > span:last-child {
+    color: var(--light);
+  }
+}
+
+.groupLine {
+  margin-bottom: 1rem;
+  div {
+    margin: 0.5rem;
+  }
+}
+
+.icon {
+  margin-left: auto;
+  font-size: 2rem;
+  cursor: pointer;
+}

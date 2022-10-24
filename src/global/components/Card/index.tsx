@@ -1,13 +1,13 @@
 import Image from 'next/image';
 
-import { renderThumbnailToCharacter } from './utils';
+import { renderThumbnailToCharacter } from '../../utils/renderThumbnailHouses';
 
 import { Props } from './types';
 import styles from './styles.module.scss';
 
 export function Card(props: Props) {
   return (
-    <figure className={styles.wrapper}>
+    <figure className={styles.wrapper} onClick={props.onClick}>
       <div>
         <Image
           src={renderThumbnailToCharacter(
